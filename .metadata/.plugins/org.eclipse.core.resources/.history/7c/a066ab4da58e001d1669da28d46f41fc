@@ -1,0 +1,56 @@
+package conversorMonedas;
+
+import javax.swing.JOptionPane;
+
+public class TipoUnidadTemperatura {
+	
+	ConvertirTemperatura convertirTemperatura = new ConvertirTemperatura();
+	
+	public void tipoUnidad() {
+		String unidadEntrada = (JOptionPane.showInputDialog(null,
+				"Seleccione la unidad de temperaura ingresada", "Unidad de Temperatura", 
+				JOptionPane.PLAIN_MESSAGE, null, new Object[] 
+				{ "Grados Celsius -> Fahrenheit", "Grados Celsius -> Kelvin", "Grados Fahrenheit -> Celsius", 
+				  "Grados Fahrenheit -> Klevin", "Grados Kelvin -> Celsius", "Grados Kelvin -> Fahrenheit"}, 
+				"Selección")).toString();
+		
+		String unidadSalida = (JOptionPane.showInputDialog(null,
+				"Seleccione la unidad de temperaura ingresada", "Unidad de Temperatura", 
+				JOptionPane.PLAIN_MESSAGE, null, new Object[] 
+				{ "Grados Celsius - Cº", "Grados Fahrenheit", "Grados Kelvin"}, 
+				"Selección")).toString();
+		
+	
+		switch (unidadEntrada) {
+			case "Grados Celsius -> Fahrenheit": {
+				convertirTemperatura
+				break;
+			}
+			case "Grados Celsius -> Kelvin": {
+				
+				break;
+			}
+			case "Grados Fahrenheit -> Celsius": {
+				
+				break;
+			}
+			case "Grados Fahrenheit -> Klevin": {
+				
+				break;
+			}
+			case "Grados Kelvin -> Celsius": {
+				
+				break;
+			}
+			case "Grados Kelvin -> Fahrenheit": {
+				
+				break;
+			}
+		}
+		
+	}
+	
+	
+}
+
+

@@ -1,0 +1,74 @@
+package conversorMonedas;
+
+import javax.swing.JOptionPane;
+
+public class ConvertirTemperatura {
+	
+		public double tempSalida = 0;
+		// Celsius a ...
+		public void convertirCelsiusToFahrenheit(double temp) {
+			tempSalida = temp * 9/5 + 32;
+			tempSalida = (double) Math.round(tempSalida * 100d)/100;
+			JOptionPane.showMessageDialog(null, "Los " +temp+ "Cº" +" equivalen a "+ tempSalida +"grados Fahrenheit");
+		}
+		public void convertirCelsiusToKelvin(double temp) {
+			tempSalida = temp + 273.15;
+			tempSalida = (double) Math.round(tempSalida * 100d)/100;
+			JOptionPane.showMessageDialog(null, "Los " +temp+ "Cº" +" equivalen a "+ tempSalida +"grados Kelvin");
+		}
+		public void convertirCelsiusToRankine(double temp) {
+			tempSalida = temp * 9/5 + 491.67;
+			tempSalida = (double) Math.round(tempSalida * 100d)/100;
+			JOptionPane.showMessageDialog(null, "Los " +temp+ "Cº" +" equivalen a "+ tempSalida +"grados Rankine");
+		}
+		// Fahrenheit a ...
+		public void convertirFahrenheitToCelsius(double temp) {
+			tempSalida = (temp - 32) * 5/9;
+			tempSalida = (double) Math.round(tempSalida * 100d)/100;
+			JOptionPane.showMessageDialog(null, "Los " +temp+ "Cº" +" equivalen a "+ tempSalida +"grados Fahrenheit");
+		}
+		public void convertirFahrenheitToKelvin(double temp) {
+			tempSalida = (temp + 459.67) * 5/9;
+			tempSalida = (double) Math.round(tempSalida * 100d)/100;
+			JOptionPane.showMessageDialog(null, "Los " +temp+ "Cº" +" equivalen a "+ tempSalida +"grados Kelvin");
+		}
+		public void convertirFahrenheitToRankine(double temp) {
+			tempSalida = temp + 459.67;
+			tempSalida = (double) Math.round(tempSalida * 100d)/100;
+			JOptionPane.showMessageDialog(null, "Los " +temp+ "Cº" +" equivalen a "+ tempSalida +"grados Rankine");
+		}
+		// Kelvin a ...
+		public void convertirKelvinToCelsius(double temp) {
+			tempSalida = (temp - 32) * 5/9;
+			tempSalida = (double) Math.round(tempSalida * 100d)/100;
+			JOptionPane.showMessageDialog(null, "Los " +temp+ "Cº" +" equivalen a "+ tempSalida +"grados Fahrenheit");
+		}
+		public void convertirKelvinToFahrenheit(double temp) {
+			tempSalida = (temp + 459.67) * 5/9;
+			tempSalida = (double) Math.round(tempSalida * 100d)/100;
+			JOptionPane.showMessageDialog(null, "Los " +temp+ "Cº" +" equivalen a "+ tempSalida +"grados Kelvin");
+		}
+		public void convertirKelvinToRankine(double temp) {
+			tempSalida = temp + 459.67;
+			tempSalida = (double) Math.round(tempSalida * 100d)/100;
+			JOptionPane.showMessageDialog(null, "Los " +temp+ "Cº" +" equivalen a "+ tempSalida +"grados Rankine");
+		}
+		// Rankine a ...
+		public void convertirRankineToCelsius(double temp) {
+			tempSalida = (temp - 32) * 5/9;
+			tempSalida = (double) Math.round(tempSalida * 100d)/100;
+			JOptionPane.showMessageDialog(null, "Los " +temp+ "Cº" +" equivalen a "+ tempSalida +"grados Fahrenheit");
+		}
+		public void convertirRankineToKelvin(double temp) {
+			tempSalida = (temp + 459.67) * 5/9;
+			tempSalida = (double) Math.round(tempSalida * 100d)/100;
+			JOptionPane.showMessageDialog(null, "Los " +temp+ "Cº" +" equivalen a "+ tempSalida +"grados Kelvin");
+		}
+		public void convertirRankineToFahrenheit(double temp) {
+			tempSalida = temp + 459.67;
+			tempSalida = (double) Math.round(tempSalida * 100d)/100;
+			JOptionPane.showMessageDialog(null, "Los " +temp+ "Cº" +" equivalen a "+ tempSalida +"grados Rankine");
+		}
+		
+
+}

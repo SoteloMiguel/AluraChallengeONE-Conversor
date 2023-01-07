@@ -1,0 +1,38 @@
+package conversorMonedas;
+
+import javax.swing.JOptionPane;
+// import javax.swing.*;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		TipoMoneda operacion = new TipoMoneda();
+		TipoUnidadTemperatura temperatura = new TipoUnidadTemperatura(); 
+		int continuar = 1;
+		while(continuar > 0) {
+			String opcion = (JOptionPane.showInputDialog(null,
+					"Seleccione una opción de Conversión", "Menú", 
+					JOptionPane.QUESTION_MESSAGE, null, 
+					new Object[] { "Conversor de Moneda", "Conversor de Temperatura" },
+					"Selección")).toString();
+		
+			switch (opcion) {
+				case "Conversor de Moneda": {
+					String input = JOptionPane.showInputDialog("Ingrese el valor a convertir:");
+					operacion.convertirMoneda(Double.parseDouble(input));
+					break;
+				}
+				case "Conversor de Temperatura": {
+					String input = JOptionPane.showInputDialog("Ingrese el valor a convertir:");
+					temperatura.tipoUnidad(Double.parseDouble(input));
+					break;
+				}
+			
+			}
+			
+			continuar = JOptionPane.showConfirmDialog(null,
+							"Si", "No", JOptionPane.YES_NO_OPTION);
+		}
+	}
+}

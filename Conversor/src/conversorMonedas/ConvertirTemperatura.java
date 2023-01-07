@@ -1,0 +1,45 @@
+package conversorMonedas;
+
+import javax.swing.JOptionPane;
+
+public class ConvertirTemperatura {
+	
+		public double tempSalida = 0;
+		// Celsius a ...
+		public void convertirCelsiusToFahrenheit(double temp) {
+			tempSalida = temp * 9/5 + 32;
+			tempSalida = (double) Math.round(tempSalida * 100d)/100;
+			JOptionPane.showMessageDialog(null, "Los " +temp+ " Cº" +" equivalen a "+ tempSalida +"º Fahrenheit");
+		}
+		public void convertirCelsiusToKelvin(double temp) {
+			tempSalida = temp + 273.15;
+			tempSalida = (double) Math.round(tempSalida * 100d)/100;
+			JOptionPane.showMessageDialog(null, "Los " +temp+ " Cº" +" equivalen a "+ tempSalida +"º Kelvin");
+		}
+		
+		// Fahrenheit a ...
+		public void convertirFahrenheitToCelsius(double temp) {
+			tempSalida = (temp - 32) * 5/9;
+			tempSalida = (double) Math.round(tempSalida * 100d)/100;
+			JOptionPane.showMessageDialog(null, "Los " +temp+ " Fº" +" equivalen a "+ tempSalida +"º Celsius");
+		}
+		public void convertirFahrenheitToKelvin(double temp) {
+			tempSalida = (temp - 32 ) * 5/9 + 273.15;
+			tempSalida = (double) Math.round(tempSalida * 100d)/100;
+			JOptionPane.showMessageDialog(null, "Los " +temp+ " Fº" +" equivalen a "+ tempSalida +"º Kelvin");
+		}
+		
+		// Kelvin a ...
+		public void convertirKelvinToCelsius(double temp) {
+			tempSalida = temp - 273.15;
+			tempSalida = (double) Math.round(tempSalida * 100d)/100;
+			JOptionPane.showMessageDialog(null, "Los " +temp+ " Kº" +" equivalen a "+ tempSalida +"º Celsius");
+		}
+		public void convertirKelvinToFahrenheit(double temp) {
+			tempSalida = 9/5*(temp -273.15) + 32;
+			tempSalida = (double) Math.round(tempSalida * 100d)/100;
+			JOptionPane.showMessageDialog(null, "Los " +temp+ " Kº" +" equivalen a "+ tempSalida +"º Fahrenheit");
+		}
+		
+
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="conversorMonedas.ConvertirMoneda"/>
+    <fullyQualifiedTypeName name="conversorMonedas.TipoMoneda"/>
+    <fullyQualifiedTypeName name="conversorMonedas.Temperatura"/>
+    <fullyQualifiedTypeName name="conversorMonedas.ConvertirTemperatura"/>
+    <fullyQualifiedTypeName name="conversorMonedas.TipoUnidadTemperatura"/>
+    <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,15 @@
+package conversorMonedas;
+
+import javax.swing.JOptionPane;
+
+public class TipoMoneda {
+	public void convertirMoneda(double monto){
+		String opcion = (JOptionPane.showInputDialog(null,
+				"Seleccione la moneda a la que deseas convertir tu dinero", "Monedas", 
+				JOptionPane.PLAIN_MESSAGE, null, new Object[] 
+				{ "Pesos Argentinos a Dolar", "Pesos Uruguayos a Dolar", "Reales Brasileros a Dolar" }, 
+				"Selección")).toString();
+		
+		
+	}
+}

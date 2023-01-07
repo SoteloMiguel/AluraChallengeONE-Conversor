@@ -1,0 +1,5 @@
+package conversorMonedas;
+
+public class TipoMoneda {
+
+}

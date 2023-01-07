@@ -1,0 +1,44 @@
+package conversorMonedas;
+
+import javax.swing.JOptionPane;
+
+public class ConvertirMoneda {
+	// valores al 07/01/2023
+	public double dolar = 0;
+	public void convertirPesoArgADolar(double monto) {
+		dolar = monto / 0.0056;
+		dolar = (double) Math.round(dolar * 100d)/100;
+		JOptionPane.showMessageDialog(null, "Tus "+ monto +" Pesos Argenmtinos equivalen a USD "+ dolar);
+	}
+	
+	public void convertirPesosUrugADolar (double monto) {
+		dolar = monto / 0.025;
+		dolar = (double) Math.round(dolar * 100d)/100;
+		JOptionPane.showMessageDialog(null, "Tus "+ monto +" Pesos Uruguayos equivalen a USD "+ dolar);
+	}
+	
+	public void convertirRealADolar(double monto) {
+		dolar = monto / 0.19;
+		dolar = (double) Math.round(dolar * 100d)/100;
+		JOptionPane.showMessageDialog(null, "Tus "+ monto +" Reales equivalen a USD "+ dolar);
+	}
+	
+	public void convertirPesoArgAEuro(double monto) {
+		dolar = monto / 0.0056;
+		dolar = (double) Math.round(dolar * 100d)/100;
+		JOptionPane.showMessageDialog(null, "Tus "+ monto +" Pesos Argenmtinos equivalen a USD "+ dolar);
+	}
+	
+	public void convertirPesosUrugAEuro (double monto) {
+		dolar = monto / 0.025;
+		dolar = (double) Math.round(dolar * 100d)/100;
+		JOptionPane.showMessageDialog(null, "Tus "+ monto +" Pesos Uruguayos equivalen a USD "+ dolar);
+	}
+	
+	public void convertirRealAEuro(double monto) {
+		dolar = monto / 0.19;
+		dolar = (double) Math.round(dolar * 100d)/100;
+		JOptionPane.showMessageDialog(null, "Tus "+ monto +" Reales equivalen a USD "+ dolar);
+	}
+	
+}

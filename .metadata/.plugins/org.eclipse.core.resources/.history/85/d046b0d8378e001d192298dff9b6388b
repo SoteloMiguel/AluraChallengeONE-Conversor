@@ -1,0 +1,7 @@
+package conversorMonedas;
+
+public class ConvertirMoneda {
+	public void convertirPesosColombianos(double monto) {
+		
+	}
+}

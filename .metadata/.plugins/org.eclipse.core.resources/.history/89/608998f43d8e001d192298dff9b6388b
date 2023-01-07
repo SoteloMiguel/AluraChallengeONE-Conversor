@@ -1,0 +1,46 @@
+package conversorMonedas;
+
+import javax.swing.JOptionPane;
+
+public class TipoMoneda {
+	
+	ConvertirMoneda Moneda = new ConvertirMoneda();
+	
+	public void convertirMoneda(double monto){
+		String opcion = (JOptionPane.showInputDialog(null,
+				"Seleccione la moneda a la que deseas convertir tu dinero", "Monedas", 
+				JOptionPane.PLAIN_MESSAGE, null, new Object[] 
+				{ "Pesos Argentinos a Dolar", "Pesos Uruguayos a Dolar", "Reales Brasileros a Dolar",
+				  "Pesos Argentinos a Euro", "Pesos Uruguayos a Euro", "Reales Brasileños a Euro"}, 
+				"Selección")).toString();
+		
+		switch (opcion) {
+		case "Pesos Argentinos a Dolar": {
+			String input = JOptionPane.showInputDialog("Ingrese el valor a convertir:");
+			break;
+		}
+		case "Pesos Uruguayos a Dolar": {
+			String input = JOptionPane.showInputDialog("Ingrese el valor a convertir:");
+			break;
+		}
+		case "Reales Brasileros a Dolar": {
+			String input = JOptionPane.showInputDialog("Ingrese el valor a convertir:");
+			break;
+		}
+		
+		case "Pesos Argentinos a Euro": {
+			String input = JOptionPane.showInputDialog("Ingrese el valor a convertir:");
+			break;
+		}
+		case "Pesos Uruguayos a Euro": {
+			String input = JOptionPane.showInputDialog("Ingrese el valor a convertir:");
+			break;
+		}
+		case "Reales Brasileros a Euro": {
+			String input = JOptionPane.showInputDialog("Ingrese el valor a convertir:");
+			break;
+		}
+	
+	}
+	}
+}

@@ -1,0 +1,29 @@
+package conversorMonedas;
+
+import javax.swing.JOptionPane;
+// import javax.swing.*;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String opcion = (JOptionPane.showInputDialog(null,
+				"Seleccione una opción de Conversión", "Menú", 
+				JOptionPane.QUESTION_MESSAGE, null, 
+				new Object[] { "Conversor de Moneda", "Conversor de Temperatura" },
+				"Selección")).toString();
+	
+		switch (opcion) {
+			case "Conversor de Moneda": {
+				String input = JOptionPane.showInputDialog("Ingrese el valor a convertir:");
+				break;
+			}
+			case "Conversor de Temperatura": {
+				String input = JOptionPane.showInputDialog("Ingrese el valor a convertir:");
+				break;
+			}
+		
+		}
+	}
+
+}

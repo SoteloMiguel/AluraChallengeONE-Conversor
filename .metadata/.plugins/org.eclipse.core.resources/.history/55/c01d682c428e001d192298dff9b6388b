@@ -1,0 +1,43 @@
+package conversorMonedas;
+
+import javax.swing.JOptionPane;
+
+public class ConvertirTemperatura {
+	
+	public void convertirTemperatura(double tempratura) {
+		String opcion = (JOptionPane.showInputDialog(null,
+				"Seleccione la unidad de temperaura a convertir", "Unidad de Temperatura", 
+				JOptionPane.PLAIN_MESSAGE, null, new Object[] 
+				{ "Grados Celsius - Cº", "Grados Fahrenheit", "Grados Kelvin","Grados Rabkine"}, 
+				"Selección")).toString();
+		
+		switch (opcion) {
+			case "Pesos Argentinos a Dolar": {
+				moneda.convertirPesoArgADolar(monto);
+				break;
+			}
+			case "Pesos Uruguayos a Dolar": {
+				moneda.convertirPesosUrugADolar(monto);
+				break;
+			}
+			case "Reales Brasileros a Dolar": {
+				moneda.convertirRealADolar(monto);
+				break;
+			}
+		
+			case "Pesos Argentinos a Euro": {
+				moneda.convertirPesoArgAEuro(monto);
+				break;
+			}
+			case "Pesos Uruguayos a Euro": {
+				moneda.convertirPesosUrugAEuro(monto);
+				break;
+			}
+			case "Reales Brasileños a Euro": {
+				moneda.convertirRealAEuro(monto);
+				break;
+			}
+	
+		}
+	}
+}

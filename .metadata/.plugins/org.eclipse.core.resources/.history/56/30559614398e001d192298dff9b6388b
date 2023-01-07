@@ -1,0 +1,26 @@
+package conversorMonedas;
+
+import javax.swing.JOptionPane;
+
+public class ConvertirMoneda {
+	double dolar = 0;
+	public void convertirPesosArgentino(double monto) {
+		dolar = monto / 0.0056;
+		dolar = (double) Math.round(dolar * 100d)/100;
+		JOptionPane.showMessageDialog(null, "Tienes USD "+ dolar);
+		
+	}
+	
+	public void convertirGuarani(double monto) {
+		dolar = monto / 0.0056;
+	}
+	
+	public void convertirPesosUruguayodouble monto) {
+		dolar = monto / 0.0056;
+	}
+	
+	public void convertirReal(double monto) {
+		dolar = monto / 0.0056;
+	}
+	
+}

@@ -1,0 +1,20 @@
+package conversorMonedas;
+
+public class ConvertirMoneda {
+	public void convertirPesosArgentino(double monto) {
+		double dolar = monto / 0.0056;
+	}
+	
+	public void convertirGuarani(double monto) {
+		double dolar = monto / 0.0056;
+	}
+	
+	public void convertirPesosUruguayodouble monto) {
+		double dolar = monto / 0.0056;
+	}
+	
+	public void convertirReal(double monto) {
+		double dolar = monto / 0.0056;
+	}
+	
+}

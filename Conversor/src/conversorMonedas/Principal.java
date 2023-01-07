@@ -1,0 +1,71 @@
+package conversorMonedas;
+
+import java.util.regex.Pattern;
+
+import javax.swing.JOptionPane;
+// import javax.swing.*;
+
+public class Principal {
+
+	public static Pattern regex = Pattern.compile("[0-9]+");
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		TipoMoneda operacion = new TipoMoneda();
+		TipoUnidadTemperatura temperatura = new TipoUnidadTemperatura(); 
+		int continuar = 1;
+		String opcion = "";
+			
+		while(continuar != 0) {
+			try {
+				opcion = (JOptionPane.showInputDialog(null,
+						"Seleccione una opción de Conversión", "Menú", 
+						JOptionPane.QUESTION_MESSAGE, null, 
+						new Object[] { "Conversor de Moneda", "Conversor de Temperatura" },
+						"Selección")).toString();	
+			} catch (Exception e) {
+				// TODO: handle exception
+				System.exit(0);
+			}
+						
+				switch (opcion) {
+					case "Conversor de Moneda": {
+						String input = JOptionPane.showInputDialog("Ingrese el valor a convertir:");
+						
+						if(verificarEntrada(input)) {
+							operacion.convertirMoneda(Double.parseDouble(input));	
+						}else {
+							JOptionPane.showMessageDialog(null, "Debe ingresar un valor numérico");
+						}
+						
+						break;
+					}
+					case "Conversor de Temperatura": {
+						String input = JOptionPane.showInputDialog("Ingrese el valor a convertir:");
+						if(verificarEntrada(input)) {
+							temperatura.tipoUnidad(Double.parseDouble(input));	
+						}else {
+							JOptionPane.showMessageDialog(null, "Debe ingresar un valor numérico");
+						}
+						
+						break;
+					}
+					
+				}
+				if (continuar != 0) {
+					continuar = JOptionPane.showConfirmDialog(null,
+								"Desea salir del conversor"," ", JOptionPane.YES_NO_OPTION);			
+				}
+		}
+	}
+	
+	
+	public static boolean verificarEntrada(String input) {
+		try {
+			Double.parseDouble(input);
+			return true;
+		} catch (Exception e) {
+			return false;
+		}		
+	}
+}
